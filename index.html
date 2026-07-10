@@ -1,15 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Engineer Portfolio</title>
-    <meta name="description" content="Portfolio of an AI Engineer specializing in Machine Learning, Deep Learning, and Computer Vision.">
+    <title>Muhammad Nasr Sundus | AI Engineer</title>
+    <meta name="description" content="Portfolio of Muhammad Nasr Sundus - AI Engineer, Flutter Developer & ML Researcher">
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -20,13 +16,13 @@
 
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="logo">AI<span>_Eng</span></div>
+        <div class="logo">MNS<span>_AI</span></div>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact" class="btn-primary-outline">Contact Me</a></li>
+            <li><a href="#home" data-i18n="navHome">Home</a></li>
+            <li><a href="#about" data-i18n="navAbout">About</a></li>
+            <li><a href="#skills" data-i18n="navSkills">Skills</a></li>
+            <li><a href="#projects" data-i18n="navProjects">Projects</a></li>
+            <li><button id="langToggle" class="btn-primary-outline">عربي</button></li>
         </ul>
         <div class="hamburger"><i class="fas fa-bars"></i></div>
     </nav>
@@ -34,15 +30,15 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <p class="greeting">Hello, World! I am</p>
-            <h1 class="name">An <span class="gradient-text">AI Engineer</span></h1>
+            <p class="greeting" data-i18n="greeting">Hello, World! I am</p>
+            <h1 class="name">Muhammad Nasr Sundus</h1>
             <h2 class="typing-container">
-                Specializing in <span class="typing-text"></span><span class="cursor">&nbsp;</span>
+                <span data-i18n="specializing">Specializing in</span> <span class="typing-text"></span><span class="cursor">&nbsp;</span>
             </h2>
-            <p class="hero-desc">Building intelligent systems, predicting the future with data, and bridging the gap between cutting-edge AI research and real-world applications.</p>
+            <p class="hero-desc" data-i18n="heroDesc">AI Engineering student with 3+ years of hands-on experience in machine learning, computer vision, deep learning, and full-stack mobile development. Driven by innovation and turning ideas into real-world products.</p>
             <div class="hero-buttons">
-                <a href="#projects" class="btn-primary">View My Work</a>
-                <a href="#contact" class="btn-secondary">Let's Talk <i class="fas fa-arrow-right"></i></a>
+                <a href="#projects" class="btn-primary" data-i18n="viewWork">View My Work</a>
+                <a href="#contact" class="btn-secondary"><span data-i18n="contactMe">Let's Talk</span> <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
         <div class="hero-graphic">
@@ -60,24 +56,24 @@
 
     <!-- About Section -->
     <section id="about" class="about">
-        <h2 class="section-title">About <span>Me</span></h2>
+        <h2 class="section-title"><span data-i18n="about">About</span> <span><span data-i18n="me">Me</span></span></h2>
         <div class="about-container">
             <div class="about-text glass-card reveal">
-                <h3>Transforming Data into Intelligence</h3>
-                <p>I am a passionate AI Engineer with expertise in developing scalable machine learning models and deploying deep learning solutions. My goal is to leverage artificial intelligence to solve complex problems and create innovative products.</p>
-                <p>I constantly explore the latest advancements in Neural Networks, Generative AI, and autonomous systems to build robust and efficient architectures.</p>
+                <h3 data-i18n="aboutTitle">Transforming Ideas into Intelligent Systems</h3>
+                <p data-i18n="aboutP1">I am a passionate AI Engineering student and ML Researcher. My expertise spans building end-to-end AI-powered systems, from autonomous vehicles to intelligent chatbots and real-time vision pipelines.</p>
+                <p data-i18n="aboutP2">As an experienced trainer and educator, I have a proven track record in teaching programming and AI concepts to youth and university students, blending entrepreneurial thinking with deep technical knowledge.</p>
                 <div class="stats">
                     <div class="stat-item">
-                        <h4 class="counter" data-target="50">0</h4><span>+</span>
-                        <p>Models Trained</p>
+                        <h4 class="counter" data-target="3">0</h4><span>+</span>
+                        <p data-i18n="statYears">Years Exp</p>
                     </div>
                     <div class="stat-item">
-                        <h4 class="counter" data-target="20">0</h4><span>+</span>
-                        <p>Projects Deployed</p>
+                        <h4 class="counter" data-target="8">0</h4><span>+</span>
+                        <p data-i18n="statProjects">Major Projects</p>
                     </div>
                     <div class="stat-item">
-                        <h4 class="counter" data-target="5">0</h4><span>+</span>
-                        <p>Years Coding</p>
+                        <h4 class="counter" data-target="100">0</h4><span>+</span>
+                        <p data-i18n="statStudents">Students Trained</p>
                     </div>
                 </div>
             </div>
@@ -86,54 +82,42 @@
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
-        <h2 class="section-title">Tech <span>Stack</span></h2>
+        <h2 class="section-title"><span data-i18n="tech">Tech</span> <span><span data-i18n="stack">Stack</span></span></h2>
         <div class="skills-grid">
             <!-- Languages -->
             <div class="skill-category glass-card reveal">
                 <div class="cat-icon"><i class="fas fa-code"></i></div>
-                <h3>Languages</h3>
+                <h3 data-i18n="skillLang">Languages</h3>
                 <div class="skill-tags">
                     <span class="tag">Python</span>
-                    <span class="tag">C++</span>
-                    <span class="tag">SQL</span>
-                    <span class="tag">R</span>
+                    <span class="tag">Dart / Flutter</span>
+                    <span class="tag">C / C++</span>
+                    <span class="tag">C#</span>
                     <span class="tag">JavaScript</span>
                 </div>
             </div>
-            <!-- ML & Deep Learning -->
+            <!-- AI & ML -->
             <div class="skill-category glass-card reveal delay-1">
-                <div class="cat-icon"><i class="fas fa-network-wired"></i></div>
-                <h3>Frameworks</h3>
+                <div class="cat-icon"><i class="fas fa-brain"></i></div>
+                <h3 data-i18n="skillAI">AI & Machine Learning</h3>
                 <div class="skill-tags">
                     <span class="tag">TensorFlow</span>
                     <span class="tag">PyTorch</span>
-                    <span class="tag">Scikit-Learn</span>
-                    <span class="tag">Keras</span>
-                    <span class="tag">HuggingFace</span>
+                    <span class="tag">OpenCV</span>
+                    <span class="tag">YOLO / MediaPipe</span>
+                    <span class="tag">RASA</span>
                 </div>
             </div>
-            <!-- Tools & Deployment -->
+            <!-- Web & Game Dev -->
             <div class="skill-category glass-card reveal delay-2">
-                <div class="cat-icon"><i class="fas fa-server"></i></div>
-                <h3>Tools & Cloud</h3>
+                <div class="cat-icon"><i class="fas fa-gamepad"></i></div>
+                <h3 data-i18n="skillDev">App & Game Dev</h3>
                 <div class="skill-tags">
-                    <span class="tag">Docker</span>
-                    <span class="tag">Git / GitHub</span>
-                    <span class="tag">AWS</span>
-                    <span class="tag">FastAPI</span>
-                    <span class="tag">Linux</span>
-                </div>
-            </div>
-            <!-- Domains -->
-            <div class="skill-category glass-card reveal delay-3">
-                <div class="cat-icon"><i class="fas fa-robot"></i></div>
-                <h3>Domains</h3>
-                <div class="skill-tags">
-                    <span class="tag">Computer Vision</span>
-                    <span class="tag">NLP</span>
-                    <span class="tag">Generative AI</span>
-                    <span class="tag">Predictive Analytics</span>
-                    <span class="tag">RL</span>
+                    <span class="tag">Flutter</span>
+                    <span class="tag">Supabase</span>
+                    <span class="tag">Unity 6</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">HTML/CSS</span>
                 </div>
             </div>
         </div>
@@ -141,78 +125,131 @@
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <h2 class="section-title"><span data-i18n="featured">Featured</span> <span><span data-i18n="projects">Projects</span></span></h2>
         <div class="filter-btns">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="cv">Computer Vision</button>
-            <button class="filter-btn" data-filter="nlp">NLP</button>
-            <button class="filter-btn" data-filter="genai">Gen AI</button>
+            <button class="filter-btn active" data-filter="all" data-i18n="filterAll">All</button>
+            <button class="filter-btn" data-filter="ai">AI & ML</button>
+            <button class="filter-btn" data-filter="app">Mobile Apps</button>
+            <button class="filter-btn" data-filter="game">Games</button>
         </div>
         <div class="projects-grid">
-            <!-- Project 1 -->
-            <div class="project-card glass-card reveal mix cv">
+            <!-- Project 1: Self Driving Car -->
+            <div class="project-card glass-card reveal mix ai">
                 <div class="project-img">
-                    <div class="img-placeholder"><i class="fas fa-eye"></i></div>
+                    <img src="images/self_driving_car.jpg" alt="Self Driving Car" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="img-placeholder" style="display:none;"><i class="fas fa-car-side"></i></div>
                 </div>
                 <div class="project-info">
                     <div class="project-tags">
-                        <span>PyTorch</span> <span>OpenCV</span> <span>YOLOv8</span>
+                        <span>Python</span> <span>YOLO</span> <span>Path Planning</span>
                     </div>
-                    <h3>Real-Time Object Detection</h3>
-                    <p>An optimized real-time object detection pipeline deployed on edge devices for autonomous navigation, achieving 60 FPS.</p>
-                    <div class="project-links">
-                        <a href="#" class="github-link"><i class="fab fa-github"></i> Code</a>
-                        <a href="#" class="live-link"><i class="fas fa-external-link-alt"></i> Demo</a>
-                    </div>
+                    <h3 data-i18n="proj1Title">Self-Driving Car</h3>
+                    <p data-i18n="proj1Desc">Fully autonomous vehicle capable of lane detection, road sign recognition, intersection handling, and path planning using computer vision.</p>
                 </div>
             </div>
-            <!-- Project 2 -->
-            <div class="project-card glass-card reveal mix nlp">
+            
+            <!-- Project 2: Sports Club -->
+            <div class="project-card glass-card reveal mix app ai">
                 <div class="project-img">
-                    <div class="img-placeholder"><i class="fas fa-language"></i></div>
+                    <img src="images/sports_club_app.jpg" alt="Sports Club App" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="img-placeholder" style="display:none;"><i class="fas fa-mobile-alt"></i></div>
                 </div>
                 <div class="project-info">
                     <div class="project-tags">
-                        <span>Transformers</span> <span>HuggingFace</span> <span>Python</span>
+                        <span>Flutter</span> <span>Supabase</span> <span>Python AI</span>
                     </div>
-                    <h3>Semantic Search Engine</h3>
-                    <p>A highly accurate semantic document search engine using BERT embeddings and vector databases (Pinecone).</p>
-                    <div class="project-links">
-                        <a href="#" class="github-link"><i class="fab fa-github"></i> Code</a>
-                    </div>
+                    <h3 data-i18n="proj2Title">Intelligent Sports Club</h3>
+                    <p data-i18n="proj2Desc">Full-featured sports club app with member management, AI-powered progress tracking, workout recommendation engine, and real-time chat.</p>
                 </div>
             </div>
-            <!-- Project 3 -->
-            <div class="project-card glass-card reveal mix genai">
+
+            <!-- Project 3: CV Body Measurement -->
+            <div class="project-card glass-card reveal mix ai">
                 <div class="project-img">
-                    <div class="img-placeholder"><i class="fas fa-magic"></i></div>
+                    <img src="images/body_measurement.jpg" alt="CV Body Measurement" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="img-placeholder" style="display:none;"><i class="fas fa-child"></i></div>
                 </div>
                 <div class="project-info">
                     <div class="project-tags">
-                        <span>LLM</span> <span>LangChain</span> <span>FastAPI</span>
+                        <span>OpenCV</span> <span>MediaPipe</span> <span>Expert System</span>
                     </div>
-                    <h3>AI Coding Assistant</h3>
-                    <p>A conversational agent powered by large language models that helps developers debug and write code efficiently.</p>
-                    <div class="project-links">
-                        <a href="#" class="github-link"><i class="fab fa-github"></i> Code</a>
-                        <a href="#" class="live-link"><i class="fas fa-external-link-alt"></i> Demo</a>
-                    </div>
+                    <h3 data-i18n="proj3Title">CV Body Measurement</h3>
+                    <p data-i18n="proj3Desc">Real-time body measurement estimation via camera using pose detection. Fused with NLP expert system to generate personalized diet plans.</p>
                 </div>
             </div>
-            <!-- Project 4 -->
-            <div class="project-card glass-card reveal mix cv">
+
+            <!-- Project 4: Age Recognition -->
+            <div class="project-card glass-card reveal mix ai">
                 <div class="project-img">
-                    <div class="img-placeholder"><i class="fas fa-x-ray"></i></div>
+                    <img src="images/age_recognition.jpg" alt="Age Recognition" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="img-placeholder" style="display:none;"><i class="fas fa-user-clock"></i></div>
                 </div>
                 <div class="project-info">
                     <div class="project-tags">
-                        <span>TensorFlow</span> <span>CNN</span>
+                        <span>Computer Vision</span> <span>Python</span>
                     </div>
-                    <h3>Medical Imaging Diagnosis</h3>
-                    <p>Deep learning model for early detection of anomalies in X-Ray images, achieving 98% accuracy in clinical tests.</p>
-                    <div class="project-links">
-                        <a href="#" class="github-link"><i class="fab fa-github"></i> Code</a>
+                    <h3 data-i18n="proj4Title">Age Recognition System</h3>
+                    <p data-i18n="proj4Desc">Facial analysis system combining computer vision and an expert system to estimate age ranges using feature extraction and rule-based reasoning.</p>
+                </div>
+            </div>
+
+            <!-- Project 5: RASA Chatbot -->
+            <div class="project-card glass-card reveal mix ai">
+                <div class="project-img">
+                    <img src="images/rasa_chatbot.jpg" alt="RASA Chatbot" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="img-placeholder" style="display:none;"><i class="fas fa-robot"></i></div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span>RASA</span> <span>NLP</span> <span>Python</span>
                     </div>
+                    <h3 data-i18n="proj5Title">RASA Sports Chatbot</h3>
+                    <p data-i18n="proj5Desc">Conversational AI assistant for gym environments covering workouts, nutrition, and health guidance with custom NLU pipelines.</p>
+                </div>
+            </div>
+
+            <!-- Project 6: Unity Games -->
+            <div class="project-card glass-card reveal mix game">
+                <div class="project-img">
+                    <img src="images/unity_games.jpg" alt="Unity Games" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="img-placeholder" style="display:none;"><i class="fas fa-gamepad"></i></div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span>Unity 6</span> <span>C#</span> <span>3D Design</span>
+                    </div>
+                    <h3 data-i18n="proj6Title">Unity 6 Game Development</h3>
+                    <p data-i18n="proj6Desc">Developed 3 fully functional games: Subway Runner (endless), FPS Tactical Shooter, and Monster Chase (adventure with AI enemies).</p>
+                </div>
+            </div>
+
+            <!-- Project 7: Websites -->
+            <div class="project-card glass-card reveal mix app">
+                <div class="project-img">
+                    <img src="images/websites.jpg" alt="Websites" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="img-placeholder" style="display:none;"><i class="fas fa-globe"></i></div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span>JavaScript</span> <span>HTML/CSS</span> <span>Generative AI</span>
+                    </div>
+                    <h3 data-i18n="proj7Title">Professional Websites + AI Bot</h3>
+                    <p data-i18n="proj7Desc">Designed and deployed fully functional professional websites integrated with automated customer service bots.</p>
+                </div>
+            </div>
+
+            <!-- Project 8: Zoo Management -->
+            <div class="project-card glass-card reveal mix app">
+                <div class="project-img">
+                    <img src="images/zoo.jpg" alt="Zoo Management" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="img-placeholder" style="display:none;"><i class="fas fa-desktop"></i></div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span>C#</span> <span>MySQL</span> <span>OOP</span>
+                    </div>
+                    <h3 data-i18n="proj8Title">Zoo Management System</h3>
+                    <p data-i18n="proj8Desc">Desktop application managing enclosures, clinic, and warehouses with full MySQL database schema and OOP architecture.</p>
                 </div>
             </div>
         </div>
@@ -220,39 +257,44 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2 class="section-title">Initiate <span>Connection</span></h2>
+        <h2 class="section-title"><span data-i18n="initiate">Initiate</span> <span><span data-i18n="connection">Connection</span></span></h2>
         <div class="contact-container glass-card reveal">
             <div class="contact-info">
-                <h3>Let's Build the Future Together</h3>
-                <p>I'm currently open for new opportunities. Whether you have a question, a project idea, or just want to discuss AI, my inbox is open.</p>
+                <h3 data-i18n="contactHead">Let's Build the Future Together</h3>
+                <p data-i18n="contactText">I'm currently open for new opportunities. Whether you have a question, a project idea, or just want to discuss AI, my inbox is open.</p>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/mohnsr09964360662-hash" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     <a href="#"><i class="fab fa-kaggle"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
-            <form class="contact-form">
+            <form class="contact-form" action="https://formsubmit.co/mohnsr09964360662@gmail.com" method="POST">
+                <!-- Configuration for FormSubmit -->
+                <input type="hidden" name="_subject" value="New Message from AI Portfolio!">
+                <input type="hidden" name="_next" value="https://mohnsr09964360662-hash.github.io/AIPortfolio/">
+                <input type="hidden" name="_captcha" value="false">
+
                 <div class="input-group">
-                    <input type="text" id="name" required placeholder=" ">
-                    <label for="name">Your Name</label>
+                    <input type="text" name="name" id="name" required placeholder=" ">
+                    <label for="name" data-i18n="yourName">Your Name</label>
                 </div>
                 <div class="input-group">
-                    <input type="email" id="email" required placeholder=" ">
-                    <label for="email">Your Email</label>
+                    <input type="email" name="email" id="email" required placeholder=" ">
+                    <label for="email" data-i18n="yourEmail">Your Email</label>
                 </div>
                 <div class="input-group">
-                    <textarea id="message" rows="5" required placeholder=" "></textarea>
-                    <label for="message">Message Data</label>
+                    <textarea name="message" id="message" rows="5" required placeholder=" "></textarea>
+                    <label for="message" data-i18n="messageData">Message Data</label>
                 </div>
-                <button type="submit" class="btn-primary">Transmit Message <i class="fas fa-paper-plane"></i></button>
+                <button type="submit" class="btn-primary"><span data-i18n="transmitMsg">Transmit Message</span> <i class="fas fa-paper-plane"></i></button>
             </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 AI Engineer. All systems functional.</p>
+        <p>&copy; 2026 Muhammad Nasr Sundus. All systems functional.</p>
     </footer>
 
     <script src="script.js"></script>
